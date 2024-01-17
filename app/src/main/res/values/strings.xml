@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Daily Task Master Pro</string>
+    <string name="title_activity_upcoming_task">UpcomingTaskActivity</string>
+</resources>
