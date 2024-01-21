@@ -1,13 +1,13 @@
 package com.androidtechguru.task.todos.model.room
 
 import com.androidtechguru.task.todos.model.data.BillPayment
-import com.androidtechguru.task.todos.model.data.Category.Companion.BILLPAYMENT
 import com.androidtechguru.task.todos.model.data.Category
-import com.androidtechguru.task.todos.model.data.Category.Companion
+import com.androidtechguru.task.todos.model.data.Category.Companion.BILLPAYMENT
 import com.androidtechguru.task.todos.model.data.Category.Companion.GROCERY
 import com.androidtechguru.task.todos.model.data.Category.Companion.MEDICINE
 import com.androidtechguru.task.todos.model.data.Category.Companion.MEETING
 import com.androidtechguru.task.todos.model.data.Category.Companion.REMINDER
+import com.androidtechguru.task.todos.model.data.CategoryType
 import com.androidtechguru.task.todos.model.data.Grocery
 import com.androidtechguru.task.todos.model.data.Medicine
 import com.androidtechguru.task.todos.model.data.Meeting

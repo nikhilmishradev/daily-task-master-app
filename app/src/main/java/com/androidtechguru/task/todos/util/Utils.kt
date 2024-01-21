@@ -3,7 +3,6 @@ package com.androidtechguru.task.todos.util
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import androidx.compose.ui.graphics.Color
 import com.androidtechguru.task.todos.model.Priority
 import com.androidtechguru.task.todos.model.data.BillPayment
@@ -31,7 +30,7 @@ fun Date.formattedDate(): String {
     return formatter.format(time)
 }
 
-fun launchActivity(context: Context, nextActivity: Class<out Activity>){
+fun launchActivity(context: Context, nextActivity: Class<out Activity>) {
     val intent = Intent(context, nextActivity)
     context.startActivity(intent)
 }
@@ -72,7 +71,6 @@ object DummyTask {
         priority = Priority.HIGH,
         category = DummyBillPayment.bill(),
         tag = Category.BILLPAYMENT,
-        id = id
     )
 
     fun reminderTask(id: Int = 0) = Task(
@@ -85,7 +83,6 @@ object DummyTask {
         priority = Priority.MEDIUM,
         category = Reminder(id, date),
         tag = Category.REMINDER,
-        id = id
     )
 
     fun medicineTask(id: Int = 0) = Task(
@@ -98,7 +95,6 @@ object DummyTask {
         priority = Priority.MEDIUM,
         category = Reminder(id, date),
         tag = Category.MEDICINE,
-        id = id
     )
 }
 

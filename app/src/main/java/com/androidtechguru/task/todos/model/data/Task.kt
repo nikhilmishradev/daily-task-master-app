@@ -19,3 +19,7 @@ data class Task(
     @param:TypeConverters(CategoryConverter::class)
     val category: Category
 )
+
+
+//  @param:TypeConverters(CategoryConverter::class)
+//    val category: Category

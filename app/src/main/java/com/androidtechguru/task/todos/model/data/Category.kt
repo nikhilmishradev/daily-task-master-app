@@ -1,10 +1,21 @@
 package com.androidtechguru.task.todos.model.data
 
-sealed class Category(tag: String) {
+
+open class CategoryType(
+    val name: String = ""
+)
+
+//sealed class Category(tag: String)
+
+fun test() {
+}
+
+open class Category(tag: String) {
 //    data class BillPayment(val id:Int): Category()
 
     companion object {
         const val CATEGORY = "Category"
+        const val GENERAL = "General"
         const val BILLPAYMENT = "Bill Payment"
         const val REMINDER = "Reminder"
         const val GROCERY = "Grocery"
@@ -21,6 +32,9 @@ sealed class Category(tag: String) {
             is Meeting -> MEETING
 
             is Medicine -> MEDICINE
+            else -> {
+                GENERAL
+            }
         }
 
     }

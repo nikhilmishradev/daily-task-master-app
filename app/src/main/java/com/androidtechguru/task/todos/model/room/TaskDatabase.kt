@@ -5,7 +5,6 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.androidtechguru.task.todos.model.data.Category
 import com.androidtechguru.task.todos.model.data.Task
 import com.androidtechguru.task.todos.repository.TaskDao
 
